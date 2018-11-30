@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hauptmenue_Button_Small_h">50dp</dimen>
+    <dimen name="hauptmenue_Button_Small_w">220dp</dimen>
+    <dimen name="hauptmenue__Small_TextSize">14dp</dimen>
+
+    <dimen name="vektoren_Button_Small_h">34dp</dimen>
+    <dimen name="vektoren_Button_Small_w">90dp</dimen>
+    <dimen name="vektoren_TextFeld_Small_h">38dp</dimen>
+    <dimen name="vektoren_TextFeld_Small_w">85dp</dimen>
+    <dimen name="vektoren_TextSize_Small">16dp</dimen>
+
+    <dimen name="matrixen_Button_Small_h">39dp</dimen>
+    <dimen name="matrixen_Button_Small_w">100dp</dimen>
+    <dimen name="matrixen_TextFeld__Small_h">33dp</dimen>
+    <dimen name="matrixen_TextFeld__Small_w">49dp</dimen>
+    <dimen name="matrixen_TextSize_Small">12dp</dimen>
+
+    <dimen name="gauss_Button__Small_h">45dp</dimen>
+    <dimen name="gauss_Button__Small_w">130dp</dimen>
+    <dimen name="gauss_TextFeld__Small_h">50dp</dimen>
+    <dimen name="gauss_TextFeld__Small_w2">65dp</dimen>
+    <dimen name="gauss_TextFeld__Small_w3">48dp</dimen>
+    <dimen name="gauss_TextFeld__Small_w4">30dp</dimen>
+    <dimen name="gauss_TextFeld__Small_w5">25dp</dimen>
+    <dimen name="gauss_TextSize_Small">14dp</dimen>
+
+    <dimen name="gauss_TextErklerung2_Small">20dp</dimen>
+    <dimen name="gauss_TextErklerung3_Small">16dp</dimen>
+    <dimen name="gauss_TextErklerung4_Small">17dp</dimen>
+    <dimen name="gauss_TextErklerung5_Small">13dp</dimen>
+
+
+    <dimen name="allgemeineButton_Small_W">50dp</dimen>
+    <dimen name="allgemeineButton_Small_H">50dp</dimen>
+
+    <dimen name="TextsizeLoesung_Small_X">12dp</dimen>
+    <dimen name="TextsizeLoesung_Small_Y">12dp</dimen>
+
+    <dimen name="V_EingabeButton_H">80dp</dimen>
+    <dimen name="V_EingabeButton_B">150dp</dimen>
+
+    <dimen name="V_OperationButton_H">80dp</dimen>
+    <dimen name="V_OperationButton_B">150dp</dimen>
+
+    <dimen name="KontrollButton_H">80dp</dimen>
+    <dimen name="KontrollButton_B">80dp</dimen>
+
+    <dimen name="M_EingabeButton_H">80dp</dimen>
+    <dimen name="M_EingabeButton_B">150dp</dimen>
+
+    <dimen name="M_OperationButton_H">80dp</dimen>
+    <dimen name="M_OperationButton_B">150dp</dimen>
+</resources>

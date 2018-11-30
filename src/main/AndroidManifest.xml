@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kojar.rp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".StartSeite"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menue"
+            android:label="@string/Haupt_Menue"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".Vektoren"
+            android:label="@string/Vektorrechnung"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Matrizen"
+            android:label="@string/Matrizenrechnung"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name=".Schritte"
+            android:label="@string/Loesungsweg"
+            />
+        <activity
+            android:name=".Gauss2"
+            android:label="@string/Eingabe_Koeffizienten"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Gauss3"
+            android:label="@string/Eingabe_Koeffizienten"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Gauss4"
+            android:label="@string/Eingabe_Koeffizienten"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Gauss5"
+            android:label="@string/Eingabe_Koeffizienten"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".GaussEntscheider"
+            android:label="@string/Gleichungssysteme"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".UebungenMenue"
+            android:label="@string/UebungsMenue"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".UebungenVektoren"
+            android:label="@string/UebungVektoren"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".UebungenMatrizen"
+            android:label="@string/UebungMatrizen"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".UebungenGleichungen"
+            android:label="@string/UebungGleichungen"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Matrixerstellen"
+            android:label="@string/Eeingabe_Matrize"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Vektorenerstellen"
+            android:label="@string/Eingabe_Vektor"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".Informationen"
+            android:label="@string/Informationen"></activity>
+    </application>
+
+</manifest>

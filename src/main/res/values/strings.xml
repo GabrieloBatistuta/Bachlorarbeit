@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Linear Algebra all in one</string>
+    <string name="Vektorrechnung">Vektorrechnung</string>
+    <string name="Matrizenrechnung">Matrizenrechnung</string>
+    <string name="Gleichungssysteme">Gleichungssysteme</string>
+    <string name="Eingabe_Vektor">Eingabe Vektor</string>
+    <string name="Eeingabe_Matrize">Eingabe Matrix</string>
+    <string name="Eingabe_Koeffizienten">Eingabe Koeffizienten</string>
+    <string name="UebungVektoren">Übung Vektoren</string>
+    <string name="UebungMatrizen">Übung Matrizen</string>
+    <string name="UebungGleichungen">Übung Gleichungen</string>
+    <string name="Haupt_Menue">Hauptmenü</string>
+    <string name="UebungsMenue">Übungsmenü</string>
+    <string name="Loesungsweg">Lösungsweg</string>
+    <string name="Informationen">Infos</string>
+
+    <!-- <string name="ap">Vektoren</string>
+    <string name="Beendenv">zurück</string>
+    <string name="zurückv">zurück</string>
+    <string name="v">zurück</string>-->
+</resources>

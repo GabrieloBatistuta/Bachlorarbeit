@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kojar.rp.Menue"
+    android:background="@drawable/a"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:minHeight="400dp"
+        android:minWidth="400dp"
+        android:id="@+id/MELinearLayout"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        tools:ignore="HardcodedText"
+        android:nestedScrollingEnabled="false"
+        android:gravity="center"
+        android:layout_weight="20">
+
+        <Button
+            android:layout_width="@dimen/hauptmenue_Button_w"
+            android:layout_height="@dimen/hauptmenue_Button_h"
+            android:text="Vektoren"
+            android:id="@+id/MEvektoren"
+            android:layout_gravity="center_horizontal"
+            android:width="175dp"
+            android:height="44dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:background="@drawable/funktionen_buttons"
+            android:textSize="@dimen/hauptmenue_TextSize"
+            tools:ignore="HardcodedText"
+            android:nestedScrollingEnabled="false"
+            android:onClick="menueVerwaltung" />
+
+        <Button
+            android:layout_width="@dimen/hauptmenue_Button_w"
+            android:layout_height="@dimen/hauptmenue_Button_h"
+            android:text="Matrizen"
+            android:id="@+id/MEmatrixen"
+            android:layout_gravity="center_horizontal"
+            android:width="175dp"
+            android:height="44dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:background="@drawable/funktionen_buttons"
+            android:textSize="@dimen/hauptmenue_TextSize"
+            tools:ignore="HardcodedText"
+            android:nestedScrollingEnabled="false"
+            android:onClick="menueVerwaltung" />
+
+        <Button
+            android:layout_width="@dimen/hauptmenue_Button_w"
+            android:layout_height="@dimen/hauptmenue_Button_h"
+            android:text="GLEICHUNGSSYSTEME"
+            android:id="@+id/MEgauss"
+            android:layout_gravity="center_horizontal"
+            android:width="175dp"
+            android:height="44dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:background="@drawable/funktionen_buttons"
+            android:textSize="@dimen/hauptmenue_TextSize"
+            tools:ignore="HardcodedText"
+            android:nestedScrollingEnabled="false"
+            android:onClick="menueVerwaltung" />
+        <Button
+            android:layout_width="@dimen/hauptmenue_Button_w"
+            android:layout_height="@dimen/hauptmenue_Button_h"
+            android:text="Übungen mit Lösungen"
+            android:id="@+id/Uebungen"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/funktionen_buttons"
+            android:textSize="@dimen/hauptmenue_TextSize"
+            android:layout_margin="5dp"
+            android:onClick="menueVerwaltung" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center">
+        <Button
+            android:layout_width="@dimen/allgemeineButton_W"
+            android:layout_height="@dimen/allgemeineButton_H"
+            android:id="@+id/beenden"
+            android:layout_gravity="center_horizontal"
+            android:width="175dp"
+            android:height="44dp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:background="@drawable/abbrechen"
+            android:textSize="@dimen/hauptmenue_TextSize"
+            tools:ignore="HardcodedText"
+            android:nestedScrollingEnabled="false"
+            android:onClick="menueVerwaltung" />
+    </LinearLayout>
+
+</LinearLayout>

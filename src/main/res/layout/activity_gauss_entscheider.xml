@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/sdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wählen Sie die Anzahl der Unbekannten aus"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/GentscheiderOK"
+                android:layout_width="@dimen/KontrollButton_B"
+                android:layout_height="@dimen/KontrollButton_H"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/ok"
+                android:onClick="gaussEntscheiderVerwaltung" />
+
+            <Button
+                android:id="@+id/GentscheiderAbbrechen"
+                android:layout_width="@dimen/KontrollButton_B"
+                android:layout_height="@dimen/KontrollButton_H"
+                android:background="@drawable/abbrechen"
+                android:onClick="gaussEntscheiderVerwaltung" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+
+            <TextView
+                android:id="@+id/GentscheiderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/GentscheiderHoch"
+                    android:layout_width="@dimen/KontrollButton_B"
+                    android:layout_height="@dimen/KontrollButton_H"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/hoch"
+                    android:layout_marginBottom="50dp"
+                    android:onClick="gaussEntscheiderVerwaltung" />
+
+                <Button
+                    android:id="@+id/GentscheiderRunter"
+                    android:layout_width="@dimen/KontrollButton_B"
+                    android:layout_height="@dimen/KontrollButton_H"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/runter"
+                    android:onClick="gaussEntscheiderVerwaltung" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

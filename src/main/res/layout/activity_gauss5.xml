@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:onClick="keybordversteken">
+
+        <Button
+            android:layout_width="@dimen/KontrollButton_B"
+            android:layout_height="@dimen/KontrollButton_H"
+            android:id="@+id/GerstellenOK5"
+            android:onClick="gaussVerwaltung"
+            android:background="@drawable/ok"
+            android:layout_marginRight="50dp" />
+
+        <Button
+            android:layout_width="@dimen/KontrollButton_B"
+            android:layout_height="@dimen/KontrollButton_H"
+            android:id="@+id/Gabbrechen5"
+            android:textSize="@dimen/vektoren_TextSize"
+            android:onClick="gaussVerwaltung"
+            android:background="@drawable/abbrechen" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:onClick="keybordversteken">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:columnCount="14"
+            android:rowCount="7"
+            tools:targetApi="ice_cream_sandwich"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="("
+                android:id="@+id/textView39"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText1"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="("
+                android:id="@+id/textView40"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText7"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X1+("
+                android:id="@+id/textView44"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText2"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="3"
+                android:layout_row="0"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X1+("
+                android:id="@+id/textView49"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText8"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X2+("
+                android:id="@+id/textView45"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText3"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="5"
+                android:layout_row="0"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:enabled="true"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X2+("
+                android:id="@+id/textView53"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText9"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="5"
+                android:layout_row="1"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X3+("
+                android:id="@+id/textView46"
+                android:layout_row="0"
+                android:layout_column="6"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText4"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="7"
+                android:layout_row="0"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X4+("
+                android:id="@+id/textView47"
+                android:layout_row="0"
+                android:layout_column="8"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText5"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="9"
+                android:layout_row="0"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X5="
+                android:id="@+id/textView48"
+                android:layout_row="0"
+                android:layout_column="10"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText6"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="11"
+                android:layout_row="0"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X3+("
+                android:id="@+id/textView57"
+                android:layout_row="1"
+                android:layout_column="6"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText10"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="7"
+                android:layout_row="1"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X4+("
+                android:id="@+id/textView61"
+                android:layout_row="1"
+                android:layout_column="8"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText11"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="9"
+                android:layout_row="1"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X5="
+                android:id="@+id/textView65"
+                android:layout_row="1"
+                android:layout_column="10"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText12"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="11"
+                android:layout_row="1"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="("
+                android:id="@+id/textView41"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText13"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X1+("
+                android:id="@+id/textView50"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText14"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="3"
+                android:layout_row="2"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X2+("
+                android:id="@+id/textView54"
+                android:layout_row="2"
+                android:layout_column="4"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText15"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="5"
+                android:layout_row="2"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X3+("
+                android:id="@+id/textView58"
+                android:layout_row="2"
+                android:layout_column="6"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText16"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="7"
+                android:layout_row="2"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X4+("
+                android:id="@+id/textView62"
+                android:layout_row="2"
+                android:layout_column="8"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText17"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="9"
+                android:layout_row="2"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X5="
+                android:id="@+id/textView66"
+                android:layout_row="2"
+                android:layout_column="10"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText18"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="11"
+                android:layout_row="2"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="("
+                android:id="@+id/textView42"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText19"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X1+("
+                android:id="@+id/textView51"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText20"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="3"
+                android:layout_row="3"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X2+("
+                android:id="@+id/textView55"
+                android:layout_row="3"
+                android:layout_column="4"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText21"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="5"
+                android:layout_row="3"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X3+("
+                android:id="@+id/textView59"
+                android:layout_row="3"
+                android:layout_column="6"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText22"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="7"
+                android:layout_row="3"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X4+("
+                android:id="@+id/textView63"
+                android:layout_row="3"
+                android:layout_column="8"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText23"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="9"
+                android:layout_row="3"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X5="
+                android:id="@+id/textView67"
+                android:layout_row="3"
+                android:layout_column="10"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText24"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="11"
+                android:layout_row="3"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="("
+                android:id="@+id/textView43"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText25"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X1+("
+                android:id="@+id/textView52"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText26"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="3"
+                android:layout_row="4"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X2+("
+                android:id="@+id/textView56"
+                android:layout_row="4"
+                android:layout_column="4"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText27"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="5"
+                android:layout_row="4"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X3+("
+                android:id="@+id/textView60"
+                android:layout_row="4"
+                android:layout_column="6"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText28"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="7"
+                android:layout_row="4"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X4+("
+                android:id="@+id/textView64"
+                android:layout_row="4"
+                android:layout_column="8"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText29"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="9"
+                android:layout_row="4"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=")X5="
+                android:id="@+id/textView68"
+                android:layout_row="4"
+                android:layout_column="10"
+                android:textSize="@dimen/gauss_TextErklerung5" />
+
+            <EditText
+                android:maxLength="6"
+                android:selectAllOnFocus="true"
+                android:id="@+id/editText30"
+                android:layout_width="@dimen/gauss_TextFeld_w5"
+                android:layout_height="@dimen/gauss_TextFeld_h"
+                android:layout_column="11"
+                android:layout_row="4"
+                android:digits="0123456789-."
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberDecimal|numberSigned"
+                android:padding="1dp"
+                android:textSize="@dimen/gauss_TextSize" />
+
+        </GridLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linefarL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="keybordversteken">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="keybordversteken">
+
+            <Button
+                android:id="@+id/Ginfo5"
+                android:layout_width="@dimen/KontrollButton_B"
+                android:layout_height="@dimen/KontrollButton_H"
+                android:background="@drawable/minfo"
+                android:layout_marginRight="50dp"
+                android:onClick="gaussVerwaltung" />
+
+            <Button
+                android:id="@+id/Gzurueck5"
+                android:layout_width="@dimen/KontrollButton_B"
+                android:layout_height="@dimen/KontrollButton_H"
+                android:layout_margin="2dp"
+                android:background="@drawable/zuruck"
+                android:onClick="gaussVerwaltung" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

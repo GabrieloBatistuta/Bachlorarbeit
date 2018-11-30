@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kojar.rp.UebungenMenue"
+    android:background="@drawable/uh1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="20"> <Button
+            android:layout_width="@dimen/hauptmenue_Button_w"
+            android:layout_height="@dimen/hauptmenue_Button_h"
+            android:text="Vektoren"
+            android:id="@+id/Uvektoren"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="124dp"
+            android:background="@drawable/funktionen_buttons"
+            android:layout_margin="5dp"
+            android:textSize="@dimen/hauptmenue_TextSize"
+            android:onClick="uebuengenVerwaltung" />
+
+            <Button
+                android:layout_width="@dimen/hauptmenue_Button_w"
+                android:layout_height="@dimen/hauptmenue_Button_h"
+                android:text="Matrizen"
+                android:background="@drawable/funktionen_buttons"
+                android:id="@+id/Umatrizen"
+                android:layout_below="@+id/Uvektoren"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:textSize="@dimen/hauptmenue_TextSize"
+                android:onClick="uebuengenVerwaltung" />
+
+            <Button
+                android:layout_width="@dimen/hauptmenue_Button_w"
+                android:layout_height="@dimen/hauptmenue_Button_h"
+                android:text="GLEICHUNGSSYSTEME"
+                android:id="@+id/Ugauss"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/Umatrizen"
+                android:layout_alignEnd="@+id/Umatrizen"
+                android:background="@drawable/funktionen_buttons"
+                android:layout_margin="5dp"
+                android:textSize="@dimen/hauptmenue_TextSize"
+                android:onClick="uebuengenVerwaltung" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="0.2">
+            <Button
+                android:layout_width="@dimen/allgemeineButton_W"
+                android:layout_height="@dimen/allgemeineButton_H"
+
+                android:id="@+id/Uzurueck"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/zuruck"
+                android:textSize="@dimen/hauptmenue_TextSize"
+                android:onClick="uebuengenVerwaltung" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

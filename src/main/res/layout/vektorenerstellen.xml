@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.kojar.rp.Vektorenerstellen">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:onClick="keybordversteken">
+
+            <Button
+                android:layout_width="@dimen/KontrollButton_B"
+                android:layout_height="@dimen/KontrollButton_H"
+                android:id="@+id/VerstellenOK"
+                android:onClick="vektorenErstellenVerwaltung"
+                android:background="@drawable/ok"
+                android:layout_marginRight="50dp" />
+
+            <Button
+                android:layout_width="@dimen/KontrollButton_B"
+                android:layout_height="@dimen/KontrollButton_H"
+                android:id="@+id/VerstellenAbbrechen"
+                android:textSize="@dimen/vektoren_TextSize"
+                android:onClick="vektorenErstellenVerwaltung"
+                android:background="@drawable/abbrechen" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="keybordversteken">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="keybordversteken"
+            android:gravity="center|center_horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="A ="
+                android:id="@+id/VektorName"
+                android:textSize="30dp" /></LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="20dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/klammenlinks"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <EditText
+                    android:layout_width="@dimen/vektoren_Button_w"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLength="6"
+                    android:digits="0123456789-."
+                    android:id="@+id/Vx"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:onClick="vektorenErstellenVerwaltung"
+                    android:selectAllOnFocus="true"/>
+
+                <EditText
+                    android:layout_width="@dimen/vektoren_Button_w"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:ems="10"
+                    android:maxLength="6"
+                    android:digits="0123456789-."
+                    android:id="@+id/Vy"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:onClick="vektorenErstellenVerwaltung"
+                    android:selectAllOnFocus="true"/>
+
+                <EditText
+                    android:layout_width="@dimen/vektoren_Button_w"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:ems="10"
+                    android:digits="0123456789-."
+                    android:maxLength="6"
+                    android:id="@+id/Vz"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:onClick="vektorenErstellenVerwaltung"
+                    android:selectAllOnFocus="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="20dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/klammenrechts"
+                ></LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="   "
+                android:textSize="30dp"
+                android:textColor="#ffffff" /></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:onClick="keybordversteken">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="@dimen/KontrollButton_B"
+                    android:layout_height="@dimen/KontrollButton_H"
+                    android:id="@+id/VplusZeile"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/hoch"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/VanzahlZeilen"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="@dimen/KontrollButton_B"
+                    android:layout_height="@dimen/KontrollButton_H"
+                    android:id="@+id/VminusZeile"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/runter"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout
+   >

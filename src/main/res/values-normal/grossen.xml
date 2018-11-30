@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="hauptmenue_Button_h">50dp</dimen>
+    <dimen name="hauptmenue_Button_w">220dp</dimen>
+    <dimen name="hauptmenue_TextSize">14dp</dimen>
+
+    <dimen name="vektoren_Button_h">34dp</dimen>
+    <dimen name="vektoren_Button_w">90dp</dimen>
+    <dimen name="vektoren_TextFeld_h">38dp</dimen>
+    <dimen name="vektoren_TextFeld_w">85dp</dimen>
+    <dimen name="vektoren_TextSize">16dp</dimen>
+
+    <dimen name="matrixen_Button_h">39dp</dimen>
+    <dimen name="matrixen_Button_w">100dp</dimen>
+    <dimen name="matrixen_TextFeld_h">33dp</dimen>
+    <dimen name="matrixen_TextFeld_w">49dp</dimen>
+    <dimen name="matrixen_TextSize">12dp</dimen>
+
+    <dimen name="gauss_Button_h">45dp</dimen>
+    <dimen name="gauss_Button_w">130dp</dimen>
+    <dimen name="gauss_TextFeld_h">50dp</dimen>
+    <dimen name="gauss_TextFeld_w2">65dp</dimen>
+    <dimen name="gauss_TextFeld_w3">48dp</dimen>
+    <dimen name="gauss_TextFeld_w4">30dp</dimen>
+    <dimen name="gauss_TextFeld_w5">25dp</dimen>
+    <dimen name="gauss_TextSize">14dp</dimen>
+
+    <dimen name="gauss_TextErklerung2">20dp</dimen>
+    <dimen name="gauss_TextErklerung3">16dp</dimen>
+    <dimen name="gauss_TextErklerung4">17dp</dimen>
+    <dimen name="gauss_TextErklerung5">13dp</dimen>
+
+
+
+    <dimen name="allgemeineButton_W">50dp</dimen>
+    <dimen name="allgemeineButton_H">50dp</dimen>
+
+    <dimen name="TextsizeLoesung_X">12dp</dimen>
+    <dimen name="TextsizeLoesung_Y">12dp</dimen>
+
+
+
+
+    <dimen name="V_EingabeButton_H">34dp</dimen>
+    <dimen name="V_EingabeButton_B">60dp</dimen>
+
+    <dimen name="V_OperationButton_H">34dp</dimen>
+    <dimen name="V_OperationButton_B">90dp</dimen>
+
+    <dimen name="KontrollButton_H">50dp</dimen>
+    <dimen name="KontrollButton_B">50dp</dimen>
+
+    <dimen name="M_EingabeButton_H">34dp</dimen>
+    <dimen name="M_EingabeButton_B">60dp</dimen>
+
+    <dimen name="M_OperationButton_H">34dp</dimen>
+    <dimen name="M_OperationButton_B">90dp</dimen>
+
+</resources>
